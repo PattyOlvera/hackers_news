@@ -1,6 +1,7 @@
 import Story from '../components/Story.js';
 import baseURL from '../utils/baseURL.js';
 import view from '../utils/view.js';
+import store from '../store.js'
 
 export default async function Stories(path) {
     const stories = await getStories(path);
