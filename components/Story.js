@@ -15,9 +15,11 @@ export default function Story(story){
                 ${story.comments_count} comments
             </a>
             |
-            <span class="favorite">
+            <span class="favorite" data-story='${JSON.stringify(story)}'>
                 <img class="heart" src="../assets/img/heart.png">
-                Add to Favorites
+                ${story.isFavorite ? "Remove from favorites" : "Add to favorites"}
+
+
             </span>
             </div>
         </div>
